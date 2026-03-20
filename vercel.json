@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/payment/notify",
+      "dest": "/api/index.py"
+    },
+    {
+      "src": "/payment/success",
+      "dest": "/api/index.py"
+    },
+    {
+      "src": "/",
+      "dest": "/api/index.py"
+    }
+  ],
+  "env": {
+    "HUPJ_APP_ID": "@hupj_app_id",
+    "HUPJ_APP_SECRET": "@hupj_app_secret",
+    "FEISHU_APP_ID": "@feishu_app_id",
+    "FEISHU_APP_SECRET": "@feishu_app_secret",
+    "FEISHU_TABLE_TOKEN": "@feishu_table_token"
+  }
+}
